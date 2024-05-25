@@ -116,3 +116,9 @@ products_data = [
 @app.get("/products", response_class=HTMLResponse)
 async def get_products(request: Request):
     return templates.TemplateResponse("products.html", {"request": request, "products_data": products_data})
+
+
+if __name__ == "__main__":
+    import uvicorn
+
+    uvicorn.run(app, host="0.0.0.0", port=8000)
