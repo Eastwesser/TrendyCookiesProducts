@@ -5,17 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d8dae40-26e0-48f9-bdc3-aeabb2a4057e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/TrendyCookies.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/database.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routers/items.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/photos/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/photos/10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/photos/11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/photos/12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/photos/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/photos/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/photos/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/photos/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/photos/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/photos/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/photos/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/photos/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cards/products.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,12 +32,25 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Eastwesser"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Eastwesser/TrendyCookiesProducts.git",
+    "accountId": "706d4620-32e9-4cb0-9973-8f0c18c7b10f"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -41,12 +60,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/altte/OneDrive/Desktop/TrendyCookies/cards/photos"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\altte\OneDrive\Desktop\TrendyCookies\database" />

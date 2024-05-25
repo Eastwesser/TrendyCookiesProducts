@@ -1,10 +1,29 @@
-from sqlalchemy import Column, Integer, String
-from database.database import Base
+from fastapi import FastAPI
+from pydantic import BaseModel
+
+app = FastAPI()
 
 
-class Item(Base):
-    __tablename__ = "items"
+class Product(BaseModel):
+    title: str
+    text: str
+    price: float
+    weight: str
+    image: str
 
-    id = Column(Integer, primary_key=True, index=True)
-    name = Column(String)
-    description = Column(String)
+
+@app.get("/api/products")
+def get_products():
+    # Получение данных из базы данных PostgreSQL
+    products = [
+        {
+            "title": "Лучшие друзья",
+            "text": "Печенье, с которого все началось! Наше фирменное печенье с шоколадной крошкой "
+                    "и грецкими орехами хрустящее снаружи с достаточно толстой и липкой серединкой.",
+            "price": 20,
+            "weight": "2 шт./ 200 гр.",
+            "image": "images/1.png"
+        },
+        # Добавьте остальные продукты
+    ]
+    return products

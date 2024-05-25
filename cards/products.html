@@ -1,0 +1,18 @@
+{% for product in products_data %}
+<div class="products-item">
+    <div class="products-item-image">
+        <img src="{{ product.image }}" alt="{{ product.title }}">
+    </div>
+    <div class="products-item-details">
+        <div class="products-item-title">{{ product.title }}</div>
+        <div class="products-item-text">{{ product.text }}</div>
+        <div class="products-item-extra">
+            <div class="products-item-info">
+                <div class="products-item-price">{{ product.price }} $</div>
+                <div class="products-item-weight">{{ product.weight }}</div>
+            </div>
+            <button class="button violet-button">Заказать</button>
+        </div>
+    </div>
+</div>
+{% endfor %}
