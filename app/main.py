@@ -1,7 +1,9 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse
+from fastapi.templating import Jinja2Templates
 
 app = FastAPI()
+templates = Jinja2Templates(directory="templates")
 
 products_data = [
     {
@@ -112,5 +114,5 @@ products_data = [
 
 
 @app.get("/products", response_class=HTMLResponse)
-async def get_products():
-    return products_data
+async def get_products(request: Request):
+    return templates.TemplateResponse("products.html", {"request": request, "products_data": products_data})
