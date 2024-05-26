@@ -5,22 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d8dae40-26e0-48f9-bdc3-aeabb2a4057e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/database/cards/cards.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/database/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/database/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authentication/auth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/authentication/fake_users.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/templates/products.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/products.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/database/images/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/10.png" beforeDir="false" afterPath="$PROJECT_DIR$/database/images/10.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/11.png" beforeDir="false" afterPath="$PROJECT_DIR$/database/images/11.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/12.png" beforeDir="false" afterPath="$PROJECT_DIR$/database/images/12.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/database/images/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/database/images/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/database/images/4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/database/images/5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/6.png" beforeDir="false" afterPath="$PROJECT_DIR$/database/images/6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/7.png" beforeDir="false" afterPath="$PROJECT_DIR$/database/images/7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/8.png" beforeDir="false" afterPath="$PROJECT_DIR$/database/images/8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/9.png" beforeDir="false" afterPath="$PROJECT_DIR$/database/images/9.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/database/database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/images/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/images/10.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/10.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/images/11.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/11.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/images/12.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/12.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/images/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/images/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/images/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/images/5.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/5.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/images/6.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/6.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/images/7.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/7.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/images/8.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/8.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/images/9.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/9.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
