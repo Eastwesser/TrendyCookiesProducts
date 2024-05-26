@@ -13,3 +13,11 @@ class Product(Base):
     price = Column(Integer, index=True)
     weight = Column(String, index=True)
     image = Column(String, index=True)
+
+
+class UserInfo(Base):
+    __tablename__ = "user_info"
+
+    id = Column(Integer, primary_key=True, index=True)
+    name = Column(String, index=True)
+    phone_number = Column(String, index=True)
