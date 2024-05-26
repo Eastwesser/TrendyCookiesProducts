@@ -1,12 +1,11 @@
-from fastapi import FastAPI, Depends, HTTPException
+from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
-from database.models import Order
-from database import SessionLocal
+from app.database.postgre_db import SessionLocal
+import orders_db
 
-app = FastAPI()
+router = APIRouter()
 
 
-# Dependency to get a database session
 def get_db():
     db = SessionLocal()
     try:
@@ -15,8 +14,7 @@ def get_db():
         db.close()
 
 
-# Route to get all orders
-@app.get("/orders")
-def get_orders(db: Session = Depends(get_db)):
-    orders = db.query(Order).all()
-    return orders
+@router.post("/place_order")
+def place_order(name: str, phone_number: str, db: Session = Depends(get_db)):
+    user_info = orders_db.save_user_info(db, name, phone_number)
+    return {"message": "Order placed successfully", "user_info": user_info}
