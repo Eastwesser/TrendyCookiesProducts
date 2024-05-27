@@ -1,3 +1,5 @@
+import uvicorn
+import logging
 from fastapi import FastAPI, Request, Depends
 from fastapi.responses import HTMLResponse, JSONResponse
 from fastapi.templating import Jinja2Templates
@@ -6,6 +8,10 @@ from sqlalchemy.orm import Session
 from app.database.models import UserInfo
 from app.data import products_data
 from app.database.database import SessionLocal
+
+# Configure logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 app = FastAPI()
 templates = Jinja2Templates(directory="templates")
@@ -27,6 +33,7 @@ def save_user_info(db: Session, name: str, phone_number: str):
 
 @app.get("/products", response_class=HTMLResponse)
 async def get_products(request: Request):
+    logger.info("Received request for products")
     return templates.TemplateResponse(
         "products.html",
         {
@@ -38,17 +45,17 @@ async def get_products(request: Request):
 
 @app.post("/orders")
 async def create_order(order_data: OrderRequest, db: Session = Depends(SessionLocal)):
-    # Call the function to save user info
+    logger.info("Received order creation request")
     order = save_user_info(db, order_data.name, order_data.phone_number)
     return JSONResponse(content={"message": "Order created successfully", "order": order})
 
 
 @app.get("/")
 async def home(request: Request):
+    logger.info("Received request for home page")
     return templates.TemplateResponse("index.html", {"request": request})
 
 
 if __name__ == "__main__":
-    import uvicorn
-
+    logger.info("Starting FastAPI server")
     uvicorn.run(app, host="0.0.0.0", port=8000)
