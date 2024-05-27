@@ -1,11 +1,7 @@
-import os
-from dotenv import load_dotenv
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
-load_dotenv()
-
-SQLALCHEMY_DATABASE_URL = os.getenv("POSTGRE")
+SQLALCHEMY_DATABASE_URL = "sqlite:///./cookies.db"
 
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
 

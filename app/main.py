@@ -1,11 +1,28 @@
-from fastapi import FastAPI, Request, Form
-from fastapi.responses import HTMLResponse
+from fastapi import FastAPI, Request, Depends
+from fastapi.responses import HTMLResponse, JSONResponse
 from fastapi.templating import Jinja2Templates
+from pydantic import BaseModel
+from sqlalchemy.orm import Session
+from app.database.models import UserInfo
 from app.data import products_data
-from orders.orders_db import save_user_info
+from app.database.database import SessionLocal
 
 app = FastAPI()
 templates = Jinja2Templates(directory="templates")
+
+
+class OrderRequest(BaseModel):
+    name: str
+    phone_number: str
+    product_title: str
+
+
+def save_user_info(db: Session, name: str, phone_number: str):
+    db_user_info = UserInfo(name=name, phone_number=phone_number)
+    db.add(db_user_info)
+    db.commit()
+    db.refresh(db_user_info)
+    return db_user_info
 
 
 @app.get("/products", response_class=HTMLResponse)
@@ -19,10 +36,11 @@ async def get_products(request: Request):
     )
 
 
-@app.post("/order")
-async def create_order(request: Request, product_id: int = Form(...), name: str = Form(...), phone: str = Form(...)):
-    order_id = save_user_info(product_id, name, phone)
-    return {"message": f"Order for product with ID {product_id} created with order ID {order_id}"}
+@app.post("/orders")
+async def create_order(order_data: OrderRequest, db: Session = Depends(SessionLocal)):
+    # Call the function to save user info
+    order = save_user_info(db, order_data.name, order_data.phone_number)
+    return JSONResponse(content={"message": "Order created successfully", "order": order})
 
 
 @app.get("/")
